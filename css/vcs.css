@@ -2,6 +2,13 @@ body {
     background-color: rgb(30, 182, 182);
 }
 table {
-    border-color: darkblue;
-    
+    border: 8px ridge #FF0000;
+    border-spacing: 15px;
+    padding: 20px;
+
+}
+td {
+    border: 10px ridge #FF0000;
+  /*border-spacing: 5px;
+  padding: 5px;*/
 }
