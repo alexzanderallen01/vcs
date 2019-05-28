@@ -9,79 +9,199 @@
 </head>
 <body>
     <h1>VCS by Ale, 5/21/19</h1>
-    <h1>steps or commands</h1>
-    <h2>step 1</h2>
-    <h3>sudo apt install git</h3>
+    <h1>steps & commands</h1>
+    <table>
+        <tr>
+            <td>
+                <h2>step 1</h2>
+                <h3>sudo apt install git</h3>
+            </td>
+            <td>
+                <h2>step 2</h2>
+                <h3>git version</h3>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h2>step 3</h2>
+                <h3>git config --global user.name "alexzanderallen01"</h3>
+            </td>
+            <td>
+                <h2>step 4</h2>
+                <h3>git config --global user.email "alexzanderallen01@gmail.com"</h3>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h2>step 5</h2>
+                <h3>git config --list</h3>
+            </td>
+            <td>
+                <h2>step 6</h2>
+                <h3>git help config</h3>
+                <h3>help is a great reminder</h3>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h2>step 7</h2>
+                <h3>git init</h3>
+                <h3>creates git in your wanted file, use command ll to see if .get was maded</h3>
+            </td>
+            <td>
+                <h2>step 8</h2>
+                <h3>git status</h3>
+                <h3>finds files to put in .gitignore</h3>                
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h2>step 9</h2>
+                <h3>touch .gitignore</h3>
+            </td>
+            <td>
+                <h2>step 10</h2>
+                <h3>rm -rf .git</h3>
+                <h3>used to remove git</h3>
+            </td>
+        </tr>
+        <tr>
+            <th>
+                <h1>Continued on Thursday:</h1>
+            </th>
+        </tr>
+        <tr>
+            <td>
+                <h2>step 11</h2>
+                <h3>git add -A</h3>
+            </td>
+            <td>
+                <h2>step 12</h2>
+                <h3>git reset</h3>
+                <h3>remove stage(step 11's -A)</h3>                
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h2>commit (step 13)</h2>
+                <h3>git add -A</h3>
+                <h3>git commit -m "Initial Commit"</h3>
+                <h3>git status</h3>
+                <h3>git log</h3>
+            </td>
+            <td>
+                <h2>step 14</h2>
+                <h3>git clone <url> <where to clone></h3>
+                <h3>git clone ../remote_repo.git .</h3>                
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h2>step 15</h2>
+                <h3>git clone https://github.com/CHS-McClendon/VCS_mrm.git .</h3>
+                <img src="image/mpage.png" alt="mpage" width="800px">
+            </td>
+            <td>
+                <h2>step 16</h2>
+                <h3>git remote -v</h3>
+                <h3>origin	https://github.com/SenorJulian/VCS-julianf.git (fetch)</h3>
+                <h3>origin	https://github.com/SenorJulian/VCS-julianf.git (push)</h3>
+                <img src="image/jpage.png" alt="jpage" width="800px">                
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h2>step 17</h2>
+                <img src="image/allpage.png" alt="files">
+            </td>
+            <td>
+                <h2>step 18</h2>
+                <h3>git branch -a</h3>                
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h2>step 19</h2>
+                <h3>git diff</h3>
+            </td>
+            <td>
+                <h2>step 20</h2>
+                <h3><pre>git remote add origin https://github.com/alexzanderallen01/vcs.git
+                </pre></h3>                
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h2>step 21</h2>
+                <h3><pre><font color="#8AE234"><b>compsci@compsci-VBox</b></font>:<font color="#729FCF"><b>/var/www/html/alexzandera/p/vcs</b></font>$ git pull origin master --allow-unrelated-histories
+                    
+                    Out put:
+                    warning: no common commits
+                    remote: Enumerating objects: 3, done.
+                    remote: Counting objects: 100% (3/3), done.
+                    remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+                    Unpacking objects: 100% (3/3), done.
+                    From https://github.com/alexzanderallen01/vcs
+                     * branch            master     -&gt; FETCH_HEAD
+                     * [new branch]      master     -&gt; origin/master
+                    Merge made by the &apos;recursive&apos; strategy.
+                     README.md | 2 <font color="#4E9A06">++</font>
+                     1 file changed, 2 insertions(+)
+                     create mode 100644 README.md
+                    </pre></h3>
+            </td>
+            <td>
+                <h2>note</h2>
+                <h3>always do step 21 before push</h3>                
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h2>step 22</h2>
+                <h3><pre>git push origin master
+                    Username for &apos;https://github.com&apos;: alexzanderallen01
+                    Password for &apos;https://alexzanderallen01@github.com&apos;: 
+                    Counting objects: 10, done.
+                    Compressing objects: 100% (8/8), done.
+                    Writing objects: 100% (10/10), 1.89 KiB | 1.89 MiB/s, done.
+                    Total 10 (delta 1), reused 0 (delta 0)
+                    remote: Resolving deltas: 100% (1/1), done.
+                    To https://github.com/alexzanderallen01/vcs.git
+                       ef67e7d..0487815  master -&gt; master
+                    </pre></h3>
+            </td>
+            <td>
+                <h2>step 23</h2>
+                <h3></h3>                
+            </td>
+        </tr>
+        <tr>
+            <td>
 
-    <h2>step 2</h2>
-    <h3>git version</h3>
+            </td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
 
-    <h2>step 3</h2>
-    <h3>git config --global user.name "alexzanderallen01"</h3>
-
-    <h2>step 4</h2>
-    <h3>git config --global user.email "alexzanderallen01@gmail.com"</h3>
-
-    <h2>step 5</h2>
-    <h3>git config --list</h3>
-
-    <h2>step 6</h2>
-    <h3>git help config</h3>
-    <h3>help is a great reminder</h3>
-
-    <h2>step 7</h2>
-    <h3>git init</h3>
-    <h3>creates git in your wanted file, use command ll to see if .get was maded</h3>
-
-    <h2>step 8</h2>
-    <h3>git status</h3>
-    <h3>finds files to put in .gitignore</h3>
+            </td>
+            <td>
+                
+            </td>
+        </tr>
+    </table>
     
-    <h2>step 9</h2>
-    <h3>touch .gitignore</h3>
+    
 
-    <h1>Continue on Thursday:</h1>
+    
 
-    <h2>step 10</h2>
-    <h3>rm -rf .git</h3>
-    <h3>used to remove git</h3>
+    
 
-    <h2>step 11</h2>
-    <h3>git add -A</h3>
+    
 
-    <h2>step 12</h2>
-    <h3>git reset</h3>
-    <h3>remove stage(step 11's -A)</h3>
-
-    <h2>commit (step 13)</h2>
-    <h3>git add -A</h3>
-    <h3>git commit -m "Initial Commit"</h3>
-    <h3>git status</h3>
-    <h3>git log</h3>
-
-    <h2>step 14</h2>
-    <h3>git clone <url> <where to clone></h3>
-    <h3>git clone ../remote_repo.git .</h3>
-
-    <h2>step 15</h2>
-    <h3>git clone https://github.com/CHS-McClendon/VCS_mrm.git .</h3>
-
-    <h2>step 16</h2>
-    <h3>git remote -v</h3>
-    <h3>origin	https://github.com/SenorJulian/VCS-julianf.git (fetch)</h3>
-    <h3>origin	https://github.com/SenorJulian/VCS-julianf.git (push)</h3>
-
-    <h2>step 17</h2>
-    <h3>git branch -a</h3>
-
-    <h2>step 18</h2>
-    <h3>git diff</h3>
-
-    <h2>step 19</h2>
-    <h3></h3>
-
-    <h2>step 20</h2>
-    <h3></h3>
+    
 
 
 
